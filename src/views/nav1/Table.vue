@@ -19,7 +19,7 @@
 		<el-table :data="users" highlight-current-row v-loading="listLoading" @selection-change="selsChange" style="width: 100%;">
 			<el-table-column type="selection" width="55">
 			</el-table-column>
-			<el-table-column type="index" width="60">
+			<el-table-column type="index" label="编号" width="100">
 			</el-table-column>
 			<el-table-column prop="name" label="姓名" width="120" sortable>
 			</el-table-column>
@@ -121,7 +121,7 @@
 				listLoading: false,
 				sels: [],//列表选中列
 
-				editFormVisible: false,//编辑界面是否显示
+				editFormVisible: false,             //编辑界面是否显示
 				editLoading: false,
 				editFormRules: {
 					name: [
@@ -138,7 +138,7 @@
 					addr: ''
 				},
 
-				addFormVisible: false,//新增界面是否显示
+				addFormVisible: false,               //新增界面是否显示
 				addLoading: false,
 				addFormRules: {
 					name: [

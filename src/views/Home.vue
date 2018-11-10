@@ -75,7 +75,7 @@
 	export default {
 		data() {
 			return {
-				sysName:'VUEADMIN',
+				sysName:'Web_Frame',
 				collapsed:false,
 				sysUserName: '',
 				sysUserAvatar: '',
