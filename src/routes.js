@@ -3,12 +3,13 @@ import NotFound from './views/404.vue'
 import Home from './views/Home.vue'
 import Main from './views/Main.vue'
 import Table from './views/nav1/Table.vue'
+import Table_1 from './views/nav1/Table_1.vue'
 import Form from './views/nav1/Form.vue'
 import user from './views/nav1/user.vue'
-import Page4 from './views/nav2/Page4.vue'
-import Page5 from './views/nav2/Page5.vue'
-import Page6 from './views/nav3/Page6.vue'
-import echarts from './views/charts/echarts.vue'
+//import Page4 from './views/nav2/Page4.vue'
+//import Page5 from './views/nav2/Page5.vue'
+//import Page6 from './views/nav3/Page6.vue'
+//import echarts from './views/charts/echarts.vue'
 
 let routes = [
     {
@@ -32,6 +33,7 @@ let routes = [
         children: [
             { path: '/main', component: Main, name: '主页', hidden: true },
             { path: '/table', component: Table, name: 'Table' },
+            { path: '/table_1', component: Table_1, name: 'Table_1' },
             { path: '/form', component: Form, name: 'Form' },
             { path: '/user', component: user, name: '列表' },
         ]
