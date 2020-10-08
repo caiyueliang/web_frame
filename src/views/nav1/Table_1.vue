@@ -81,13 +81,13 @@
 					<el-input v-model="addForm.name" auto-complete="off"></el-input>
 				</el-form-item>
 				<el-form-item label="数量">
-					<el-input-number v-model="addForm.age" :min="0"></el-input-number>
+					<el-input-number v-model="addForm.number" :min="0"></el-input-number>
 				</el-form-item>
 				<el-form-item label="单价">
-					<el-input v-model="addForm.addr" auto-complete="off"></el-input>
+					<el-input v-model="addForm.price_in" auto-complete="off"></el-input>
 				</el-form-item>
 				<el-form-item label="售价">
-					<el-input v-model="addForm.addr" auto-complete="off"></el-input>
+					<el-input v-model="addForm.price_sell" auto-complete="off"></el-input>
 				</el-form-item>
 				<el-form-item label="有效期">
 					<el-date-picker type="date" placeholder="选择日期" v-model="addForm.birth"></el-date-picker>
@@ -208,7 +208,7 @@
 				this.addFormVisible = true;
 				this.addForm = {
 					name: '',
-					sex: -1,
+					number: 0,
 					age: 0,
 					birth: '',
 					addr: ''

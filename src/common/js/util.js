@@ -1,5 +1,8 @@
+import qs from 'qs'
+
 var SIGN_REGEXP = /([yMdhsm])(\1*)/g;
 var DEFAULT_PATTERN = 'yyyy-MM-dd';
+
 function padding(s, len) {
     var len = len - (s + '').length;
     for (var i = 0; i < len; i++) { s = '0' + s; }
@@ -7,6 +10,13 @@ function padding(s, len) {
 };
 
 export default {
+    saveData: function (name, number, price_in, price_sell) {
+        const info = {"name": name, "number": number, "price_in": price_in, "price_sell": price_sell}
+        localStorage.setItem('info', qs.stringify(info))
+    },
+    loadData: function (name) {
+        var info = qs.parse(localStorage.getItem('info'))
+    },
     getQueryStringByName: function (name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
         var r = window.location.search.substr(1).match(reg);
@@ -18,8 +28,6 @@ export default {
         return context == null || context == "" || context == "undefined" ? "" : context;
     },
     formatDate: {
-
-
         format: function (date, pattern) {
             pattern = pattern || DEFAULT_PATTERN;
             return pattern.replace(SIGN_REGEXP, function ($0) {
@@ -55,7 +63,5 @@ export default {
             }
             return null;
         }
-
     }
-
 };
