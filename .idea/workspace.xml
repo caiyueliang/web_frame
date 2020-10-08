@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3656f2c-0cec-48dd-ab06-e1e7ad6bdde6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/common/js/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/common/js/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/nav1/Table_1.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/nav1/Table_1.vue" afterDir="false" />
-    </list>
+    <list default="true" id="a3656f2c-0cec-48dd-ab06-e1e7ad6bdde6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
